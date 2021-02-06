@@ -48,18 +48,32 @@ function ui() {
   });
 }
 
+
+// Funtion to handle delete and strike-through
+function handleDeleteStrike(event) {
+  let selectedComponent =
+    event.target.parentElement.parentElement.dataset.number;
+  // handles the delete function of any component
+  if (event.target.classList[1] === "fa-times") {
+    delete data[selectedComponent];
+    section.innerText = "";
+    ui();
+  }
+  // Handles the strike through
+  if (event.target.classList[1] === "fa-check") {
+    if (!data[selectedComponent].strike) {
+      event.target.parentElement.nextSibling.style.textDecoration =
+        "line-through";
+      data[selectedComponent].strike = !data[selectedComponent].strike;
+    } else {
+      event.target.parentElement.nextSibling.style.textDecoration = "none";
+      data[selectedComponent].strike = !data[selectedComponent].strike;
+    }
+  }
+}
+
 // Event Listener for Tick to srike off text
-section.addEventListener('click',(event)=>{
-    if(event.target.classList[1] === "fa-times"){
-        let selectedComponent = event.target.parentElement.parentElement.dataset.number;
-        delete data[selectedComponent];
-        section.innerText ="";
-        ui();
-    }
-    if(event.target.classList[1] === "fa-check"){
-        event.target.parentElement.nextSibling.style.textDecoration ="line-through";
-    }
-})
+section.addEventListener('click',handleDeleteStrike);
 
 // Event Listener on Input
 input.addEventListener("keyup", handleInput);
