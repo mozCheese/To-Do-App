@@ -31,6 +31,11 @@ function ui() {
     let para = document.createElement("p");
     para.innerText = `${element.task}`;
 
+    // Persists the striked off tasks
+    if (element.strike) {
+      para.style.textDecoration = "line-through";
+    }
+
     let anchorOne = document.createElement('a');
     let anchorTwo = document.createElement('a');
 
