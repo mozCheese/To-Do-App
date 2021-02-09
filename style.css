@@ -216,7 +216,7 @@ button:hover{
 }
 
 .active-tag {
+  color: rgb(221, 80, 80);
   background: white;
   border: 2px solid rgb(221, 80, 80);
-  color: rgb(221, 80, 80);
 }
