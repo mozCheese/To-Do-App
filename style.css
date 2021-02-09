@@ -220,3 +220,20 @@ button:hover{
   background: white;
   border: 2px solid rgb(221, 80, 80);
 }
+
+.footer{
+  margin-top: 50px;
+  background: rgb(194, 194, 194);
+  padding: 20px 0;
+  font-weight: 600;
+  color: rgb(39, 39, 39);
+}
+
+.fa-heart{
+  color: red;
+}
+
+.update{
+  display: block;
+  margin: 10px 0;
+}
