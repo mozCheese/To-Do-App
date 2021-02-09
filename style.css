@@ -133,6 +133,7 @@ table {
 body {
   font-family: Roboto;
   background: whitesmoke;
+  box-sizing: border-box;
 }
 
 .text-center {
@@ -190,4 +191,32 @@ input:focus {
 
 .fa-times {
   color: rgb(192, 50, 50);
+}
+
+.filters {
+  margin-top: 50px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background: rgb(221, 80, 80);
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
+  margin: 0 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+button:hover{
+  background: white;
+  border: 2px solid rgb(221, 80, 80);
+  color: rgb(221, 80, 80);
+}
+
+.active-tag {
+  background: white;
+  border: 2px solid rgb(221, 80, 80);
+  color: rgb(221, 80, 80);
 }

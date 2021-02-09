@@ -38,13 +38,69 @@
         />
       </section>
 
-      <section class="list-section text-center">
-        <!-- <div class="component">
-          <a href="#"><i class="fas fa-check"></i></a>
-          <p>1. Learn DOM</p>
-          <a href="#"><i class="fas fa-times"></i></a>
-        </div> -->
+      <section class="filters text-center">
+        <button class="all">All</button>
+        <button class="active">Active</button>
+        <button class="completed">Completed</button>
+        <button class="clear">Clear Completed</button>
       </section>
+      <!DOCTYPE html>
+      <html lang="en">
+        <head>
+          <meta charset="UTF-8" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+          <title>TOday-DOing Application</title>
+
+          <!-- Stylesheet link -->
+          <link rel="stylesheet" href="style.css" />
+
+          <!-- Font link -->
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap"
+            rel="stylesheet"
+          />
+
+          <!-- Icons Link -->
+          <script
+            src="https://kit.fontawesome.com/67427b16f1.js"
+            crossorigin="anonymous"
+          ></script>
+        </head>
+        <body>
+          <header>
+            <div class="heading text-center">
+              TO<span>day</span>-DO<span>ing</span>
+            </div>
+          </header>
+
+          <main>
+            <section class="input-section text-center">
+              <input
+                class="text-center"
+                type="text"
+                name="todo-input"
+                placeholder="Enter Your TO-DO"
+              />
+            </section>
+
+            <section class="filters text-center">
+              <button class="all">All</button>
+              <button class="active">Active</button>
+              <button class="completed">Completed</button>
+              <button class="clear">Clear Completed</button>
+            </section>
+
+            <section class="list-section text-center"></section>
+          </main>
+          <script src="./script.js"></script>
+        </body>
+      </html>
+
+      <section class="list-section text-center"></section>
     </main>
     <script src="./script.js"></script>
   </body>
